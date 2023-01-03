@@ -1,0 +1,19 @@
+{
+    "name": "hepburn/bridge-sidecar",
+    "description": "php通过jsonRpc;grpc调用golang的包.对应相应的golang 项目sidecar",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hepburn\\BridgeSidecar\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jindaoyiwu",
+            "email": "jindaoyiwu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
