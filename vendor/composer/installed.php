@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '7670b5a7e2f3a20a5baaf9829767e348e20ec4da',
+        'reference' => '71500b12433141cec78735d7b127df86c65d231b',
         'name' => 'hepburn/bridge-sidecar',
         'dev' => true,
     ),
@@ -45,7 +45,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '7670b5a7e2f3a20a5baaf9829767e348e20ec4da',
+            'reference' => '71500b12433141cec78735d7b127df86c65d231b',
             'dev_requirement' => false,
         ),
         'psr/http-message' => array(
