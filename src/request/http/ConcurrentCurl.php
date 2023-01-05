@@ -105,7 +105,6 @@ class ConcurrentCurl
      */
     public function promiseGet($key, $uri, array $params = []): static
     {
-        $params = [requestOptions::QUERY => $params];
         $this->uri[$key] = $uri;
         $this->params[$key] = $params;
         $this->promises[$key] = $this->client->getAsync($uri, $params);
@@ -121,15 +120,6 @@ class ConcurrentCurl
      */
     public function promisePost($key, $uri, array $params = []): static
     {
-        $this->uri[$key] = $uri;
-        $this->params[$key] = $params;
-        $this->promises[$key] = $this->client->postAsync($uri, $params);
-        return $this;
-    }
-
-    public function promiseJsonPost($key, $uri, array $params = []): static
-    {
-        $params = [requestOptions::JSON =>$params];
         $this->uri[$key] = $uri;
         $this->params[$key] = $params;
         $this->promises[$key] = $this->client->postAsync($uri, $params);

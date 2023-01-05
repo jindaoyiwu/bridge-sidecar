@@ -89,7 +89,6 @@ class Curl
      */
     public function get($uri, array $params = []): mixed
     {
-        $params = [requestOptions::QUERY => $params];
         return $this->client->get($uri, $params);
     }
 
@@ -101,20 +100,8 @@ class Curl
      */
     public function post($uri, array $params = []): mixed
     {
-        $params = [requestOptions::JSON =>$params];
         return $this->client->post($uri, $params);
     }
 
-    /**
-     * 发送postJson请求
-     * @param $uri
-     * @param array $params
-     * @return mixed
-     */
-    public function jsonPost($uri, array $params = []): mixed
-    {
-        $params = [requestOptions::JSON =>$params];
-        return $this->client->post($uri, $params);
-    }
 
 }
