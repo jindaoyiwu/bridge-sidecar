@@ -4,9 +4,9 @@
 namespace Hepburn\BridgeSidecar\Test\JsonRpc;
 
 
-use Hepburn\BridgeSidecar\Request\JsonRpc\JsonRPC;
+use Hepburn\BridgeSidecar\Request\JsonRpc\Dispatch;
 require "../../src/request/jsonRpc/Dispatch.php";
-$client = new JsonRPC("127.0.0.1", 6000, 3);
+$client = new Dispatch("127.0.0.1", 6000, 3);
 $args = [
     'app' => 'all',
     "job_name" => "test.isPostJsonOk",

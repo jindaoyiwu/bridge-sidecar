@@ -1,0 +1,26 @@
+syntax = "proto3";
+package task;
+option php_namespace = "Hepburn\\BridgeSidecar\\Request\\Grpc\\Protos\\Task";
+option php_metadata_namespace = "Hepburn\\BridgeSidecar\\Request\\Grpc\\Protos\\Task";
+option go_package = "./packages";
+
+
+service Task {
+  rpc Dispatch (TaskRequest) returns (TaskResponse) {}
+}
+
+message TaskRequest {
+  string app = 1;
+  string jobName = 2;
+  string params= 3;
+  int64  delay=4;
+  string method= 5;
+}
+
+message TaskResponse {
+  int32 code = 1;
+  string message = 2;
+  map<string, string> data = 3;
+}
+
+

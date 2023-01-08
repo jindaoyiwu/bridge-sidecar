@@ -4,7 +4,6 @@ namespace Hepburn\BridgeSidecar\Request\Http;
 use GuzzleHttp\Client;
 use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Promise\Utils;
-use GuzzleHttp\requestOptions;
 
 /**
  * 并发请求

@@ -36,6 +36,9 @@ class ComposerStaticInit92b73f397afeb3070932ccb0c5dc8fe3
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Grpc\\' => 5,
+            'Google\\Protobuf\\' => 16,
+            'GPBMetadata\\Google\\Protobuf\\' => 28,
         ),
     );
 
@@ -71,6 +74,18 @@ class ComposerStaticInit92b73f397afeb3070932ccb0c5dc8fe3
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Grpc\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/grpc/grpc/src/lib',
+        ),
+        'Google\\Protobuf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf',
+        ),
+        'GPBMetadata\\Google\\Protobuf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf',
         ),
     );
 

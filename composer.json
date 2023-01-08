@@ -17,6 +17,9 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.1.0",
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~6.0",
+        "grpc/grpc": "^1.42",
+        "google/protobuf": "^3.19.4",
+        "ext-grpc": "*"
     }
 }

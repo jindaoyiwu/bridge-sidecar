@@ -1,7 +1,7 @@
 <?php
 namespace Hepburn\BridgeSidecar\Request\JsonRpc;
 
-class JsonRPC
+class Dispatch
 {
     private $conn;
     private int $timeOut;
